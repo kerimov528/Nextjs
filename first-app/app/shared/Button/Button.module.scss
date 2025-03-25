@@ -1,0 +1,52 @@
+// components/Button/Button.module.scss
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+  
+    &.primary {
+      background-color: #4CAF50;
+      color: white;
+      &:hover { background-color: #45a049; }
+      &:focus { outline: 2px solid #3e8e41; }
+      &:disabled { background-color: #cccccc; }
+    }
+  
+    &.secondary {
+      background-color: #f1f1f1;
+      color: #4CAF50;
+      &:hover { background-color: #e1e1e1; }
+      &:focus { outline: 2px solid #cccccc; }
+    }
+  
+    &.tertiary {
+      background-color: transparent;
+      border: 1px solid #4CAF50;
+      color: #4CAF50;
+      &:hover { background-color: rgba(76, 175, 80, 0.1); }
+      &:focus { outline: 2px solid #3e8e41; }
+    }
+  
+    // Sizes
+    &.normal { font-size: 16px; }
+    &.medium { font-size: 14px; }
+    &.small { font-size: 12px; padding: 5px 10px; }
+  
+    // Icons
+    &.icon-left { .icon { margin-right: 10px; } }
+    &.icon-right { .icon { margin-left: 10px; } }
+  
+    // States
+    &.default { /* Default styles */ }
+    &.hover { /* Hover styles */ }
+    &.focus { /* Focus styles */ }
+    &.click { /* Click styles */ }
+    &.loading { /* Loading styles with spinner */ }
+    &.disabled { /* Disabled styles */ }
+  }
+  
